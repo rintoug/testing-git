@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "purgecss": "^4.0.0"
+  },
+  "scripts": {
+    "build": "npx purgecss --css bootstrap.min.css --content /xampp/htdocs/websites/projects/hashlinq/resources/views/**/*.php --output  /xampp/htdocs/websites/projects/hashlinq/public/css",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
